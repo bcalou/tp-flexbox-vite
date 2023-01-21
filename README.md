@@ -73,7 +73,7 @@ Résultat approximatif à cette étape :
 Pour améliorer la qualité de votre code...
 
 - Vérifier que Prettier a bien fait son travail de formattage automatique
-- Utiliser le [validateur du W3C](https://validator.w3.org/#validate_by_input) pour éliminer les "warnings" et les "errors" (vous pouvez ignorez les "infos")
+- Utiliser le [validateur du W3C](https://validator.w3.org/#validate_by_input) pour éliminer les "warnings" et les "errors" (vous pouvez ignorer les "infos")
 - Utiliser l'extension axe DevTools (disponible sur [Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd) et [Edge](https://microsoftedge.microsoft.com/addons/detail/axe-devtools-web-access/kcenlimkmjjkdfcaleembgmldmnnlfkn)) pour vérifier l'absence d'erreurs d'accessibilité
 
 ### Avant de passer à la suite
@@ -130,7 +130,7 @@ img {
 
 ### Reproduction du design
 
-Votre but est maintenant de reproduire la carte sur un écran de type iPhone5 (`320px * 568px`). Il vous appartient de pousser la ressemblance avec l'original au maximum, mais voici un exemple de rendu tout à fait correct :
+Votre but est maintenant de reproduire la carte sur un écran de type iPhone5 (`320px*568px`). Il vous appartient de pousser la ressemblance avec l'original au maximum, mais voici un exemple de rendu tout à fait correct :
 
 ![](doc/portrait.png)
 
@@ -147,8 +147,8 @@ Votre but est maintenant de reproduire la carte sur un écran de type iPhone5 (`
 
 ## Étape 3 : Mode paysage
 
-On souhaite adapter la carte à un mobile de la même taille en mode paysage (`568px * 320px`), autrement dit lorsque la largeur est plus grande que la hauteur.
-Pour ce faire, vous pouvez ajouter une mixin SASS au début de votre fichier principal (ou dans un fichier séparé) :
+On souhaite adapter la carte à un mobile de la même taille en mode paysage (`568px*320px`), autrement dit lorsque la largeur est plus grande que la hauteur.
+Pour ce faire, vous pouvez ajouter une mixin SASS au début de votre fichier principal (ou dans un fichier séparé que vous importerez) :
 
 ```scss
 @mixin landscape {
@@ -169,6 +169,8 @@ Grâce à cette mixin, vous pouvez écrire :
   }
 }
 ```
+
+Dans cet exemple, la règle `color: blue` écrase la règle `color: red` lorsque le viewport passe en mode paysage.
 
 Utiliser une mixin permet d'inclure les variations au plus proche du sélecteur de base, au lieu de tout écrire en fin de fichier, ce qui rend le code plus maintenable / lisible.
 
