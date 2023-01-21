@@ -10,16 +10,31 @@ Le but de l'exercice est de reproduire une célèbre carte à jouer en utilisant
 ## Étape 0 : Installation de l'environnement de développement
 
 - Créer un fork de ce repository
-- Clonez le projet grâce à GIT
-- Ouvrez le projet dans votre éditeur (VSCode recommandé)
+- Cloner le projet grâce à GIT
+- Ouvrir le projet dans votre éditeur (VSCode recommandé)
 
 ### Formattage automatique du code
 
 - Installer le plugin _Prettier_ pour votre éditeur
-- Dans les options :
-  - Cocher "Format on save"
-  - Régler "Default formatter" sur "...prettier..."
-- Vérifier le bon fonctionnement sur les fichiers HTML et CSS (à la sauvegarde, le code mal formaté est-il reformaté ?)
+- Dans les options (si vous utilisez VSCode) :
+  - Cocher `Format on save`
+  - Régler `Default formatter` sur `...prettier...`
+- Vérifier le bon fonctionnement sur le fichier `index.html` (à la sauvegarde, le code mal formaté est-il reformaté ?)
+
+### Installation de node
+
+Node permet d'éxécuter du JavaScript sur votre machine (en dehors du navigateur). La majorité des outils de développement front sont basés sur node.
+
+Suivez les [instructions pour installer Node](https://nodejs.org/fr/).
+
+Pour vérifier l'installation correcte, ouvrez un terminal et tapez :
+
+```
+node -v
+```
+
+Vous devriez voir la version de node qui a été installée.
+
 
 ### Lancement de Vite
 
@@ -28,8 +43,10 @@ L'environnement de travail pour ce TP utilise [Vite](https://vitejs.dev/), un ou
 - Ouvrez un terminal depuis votre éditeur puis lancez l'installation des dépendances du projet :
 
 ```
-npm run install
+npm install
 ```
+
+*Note : `npm` est le gestionnaire de paquets de node. Il a été installé automatiquement avec ce dernier.*
 
 - Lancez Vite en mode développement
 
@@ -37,7 +54,7 @@ npm run install
 npm run dev
 ```
 
-Votre serveur local est maintenant disponible à l'URL fournie par Vite.
+Votre serveur local est maintenant disponible à l'URL fournie par Vite. Accedez-y : vous devez voir une page blanche.
 
 ## Étape 1 : Les fondations (HTML sauce BEM)
 
