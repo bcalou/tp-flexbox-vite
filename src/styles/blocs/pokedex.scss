@@ -1,0 +1,12 @@
+.pokedex {
+  font-size: 0.625rem;
+  margin: 0.125rem 0.625rem 0.625rem;
+  padding: 0.125rem 0.3125rem;
+  border: 0.125rem solid;
+  border-image: var(--gradient) 2;
+  font-style: italic;
+
+  @include landscape {
+    margin-bottom: 0;
+  }
+}

@@ -2,12 +2,77 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="src/img/leaf.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.scss" />
     <title>Bulbizarre</title>
   </head>
   <body>
+    <main class="pokemon">
+      <div class="pokemon__part">
+        <header class="identity">
+          <div>
+            <p class="identity__evolution">Pokémon de base</p>
+            <h1 class="identity__name">Bulbizarre</h1>
+          </div>
+          <div>
+            <span class="identity__life">40 PV</span>
+            <img
+              class="identity__type"
+              src="src/img/leaf.png"
+              alt="Type feuille"
+            />
+          </div>
+        </header>
 
+        <figure class="appearance">
+          <img
+            class="appearance__image"
+            src="src/img/bulbizarre.jpg"
+            alt="Bulbizarre"
+          />
+
+          <figcaption class="appearance__details">
+            Pokémon Graine. Taille : 0,7m, poids: 6,9 kg
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pokemon__part">
+        <section class="attack">
+          <div class="attack__cost">
+            <img src="src/img/leaf.png" alt="Feuille" />
+            <img src="src/img/leaf.png" alt="Feuille" />
+          </div>
+          <div class="attack__description">
+            <h2 class="attack__name">Vampigraine</h2>
+            <span class="attack__details">
+              À moins que tous les dégats infligés par cette attaque ne soient
+              prévenus, vous pouvez retirer 1 marqueur de dégats de Bulbizarre.
+            </span>
+          </div>
+          <div class="attack__damage">20</div>
+        </section>
+
+        <ul class="types">
+          <li>
+            <p class="types__label">Faiblesse</p>
+            <img src="src/img/fire.png" alt="Feu" />
+          </li>
+          <li>
+            <p class="types__label">Résistance</p>
+          </li>
+          <li>
+            <div class="types__label">Coût de retraite</div>
+            <img src="src/img/normal.png" alt="Normal" />
+          </li>
+        </ul>
+
+        <footer class="pokedex">
+          Il a une étrange graine plantée sur son dos. Elle grandit avec lui
+          depuis la naissance. NIV. 13 No. 1
+        </footer>
+      </div>
+    </main>
   </body>
 </html>

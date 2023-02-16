@@ -1,0 +1,29 @@
+.attack {
+  flex-grow: 1;
+  margin: 0 0.9375rem 0 0.625rem;
+  display: flex;
+  align-items: center;
+}
+
+.attack__cost {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.attack__description {
+  flex-shrink: 1;
+  margin: 0 0.3125rem;
+}
+
+.attack__name {
+  font-weight: bold;
+  display: inline;
+}
+
+.attack__details {
+  font-size: 0.8125rem;
+}
+
+.attack__damage {
+  font-size: 1.5rem;
+}

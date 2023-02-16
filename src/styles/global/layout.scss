@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: yellowgreen;
+  border: 0.75rem solid;
+  border-image: var(--gradient) 12;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+
+  @include landscape {
+    justify-content: center;
+  }
+}

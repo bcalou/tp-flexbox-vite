@@ -1,0 +1,13 @@
+.types {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.125rem solid black;
+  margin: 0 0.3125rem;
+  padding-top: 0.1875rem;
+  text-align: center;
+}
+
+.types__label {
+  font-weight: bold;
+  font-size: 0.625rem;
+}
